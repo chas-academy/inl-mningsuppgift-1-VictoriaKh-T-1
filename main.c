@@ -5,7 +5,6 @@ int main()
 {
   // The Line below must *NOT* be changed or test will fail!
   srand(1);
-
   int numbers[100];
   int counts[6] = {0, 0, 0, 0, 0, 0};
   int sum = 0;
@@ -14,20 +13,6 @@ int main()
   {
     numbers[i] = (rand() % 6) + 1;
     sum += numbers[i];
-    /*  if (numbers[i] == 1)
-        {
-          counts[0]++;
-        }else if (numbers[i] == 2) {
-          counts[1]++;
-        }else if (numbers[i] == 3) {
-          counts[2]++;
-        }else if (numbers[i] == 4) {
-          counts[3]++;
-        }else if (numbers[i] == 5) {
-          counts[4]++;
-        }else {
-          counts[5]++;
-        } */
     switch (numbers[i])
     {
     case 1:
@@ -56,7 +41,7 @@ int main()
     printf("%d\n", counts[i]);
   }
 
-  printf("Total: %d\n", sum);
-  printf("%.1f", sum / 100.0);
+  printf("%d\n", sum);
+  printf("%.1f\n", sum / 100.0);
   return 0;
 }
